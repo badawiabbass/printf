@@ -25,3 +25,5 @@ The printf function in C is used for formatted output. It’s part of the Standa
 | o          |	print_octal         	|print a number in base 8                     | 
 | R          |	print_rot	            |print a string encoded in rot13 format       |
 
+
+
