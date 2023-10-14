@@ -9,7 +9,7 @@ The printf function in C is used for formatted output. It’s part of the Standa
 
 
 
-
+*Patter and Specifiers*
 
 
 | Specifiers | Functions              | Description                                 |
@@ -24,6 +24,30 @@ The printf function in C is used for formatted output. It’s part of the Standa
 | X       	 | print_hexadecimal_upp	|print a number in base 16 uppercase          |
 | o          |	print_octal         	|print a number in base 8                     | 
 | R          |	print_rot	            |print a string encoded in rot13 format       |
+
+
+
+![68747470733a2f2f692e696d6775722e636f6d2f766d55304668432e706e67](https://github.com/badawiabbass/printf/assets/69194026/9d046f61-3b39-4901-b830-4cf7df551d61)
+
+[cplusplus](https://cplusplus.com/reference/cstdio/printf/)
+
+
+*Flowcharts*
+
+
+![68747470733a2f2f692e696d6775722e636f6d2f536a71495573372e706e67 (1)](https://github.com/badawiabbass/printf/assets/69194026/b04a18e4-e127-4cae-a4e4-d1029af56566)
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
