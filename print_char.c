@@ -8,6 +8,7 @@ int print_char(va_list args)
 {
 	int count = 0;
 	char arg = va_arg(args, int);
+
 	_putchar(arg);
 	count++;
 	return (count);
