@@ -8,6 +8,7 @@ int print_char(va_list args);
 int print_per(va_list args);
 int _putchar(int c);
 int print_int(va_list args);
+int print_positive_int(int n);
 typedef struct printf
 {
 	char specifier;
