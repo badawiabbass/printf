@@ -1,5 +1,9 @@
 #include "main.h"
-
+/** 
+ * print_int - for print integers
+ * @args: the argument of integers
+ * Return: 1
+ */
 
 int print_int(va_list args)
 {
