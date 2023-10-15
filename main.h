@@ -6,7 +6,7 @@
 int print_str(va_list args);
 int print_char(va_list args);
 int print_per(va_list args);
-
+int _putchar(int c);
 typedef struct printf
 {
 	char specifier;
@@ -23,31 +23,4 @@ int _putchar(int c)
 	return write(1, &c, 1);
 }
 int _printf(const char *format, ...);
-int print_str(va_list args)
- {
-     char *str = va_arg(args, char *);
-     int count = 0;
-     int j = 0;
-     while (str[j])
-        {
-            _putchar(str[j]);
-            count++;
-            j++;
-        }
-        return (count);
- }
- int print_char(va_list args)
-{
-    int count = 0;
-    char arg1 = va_arg(args, int);
-    _putchar(arg1);
-    count++;
-    return (count);
-}
-int print_per(va_list args)
-{
-	(void)args;
-    _putchar('%');
-    return (1);
-}
 #endif
