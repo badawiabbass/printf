@@ -13,7 +13,7 @@ int print_char(va_list args)
 	{
 		_putchar('\\');
 		_putchar('0');
-		count = 2;
+		count += 2;
 	}
 	else
 	{
