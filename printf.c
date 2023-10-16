@@ -9,44 +9,30 @@ int _printf(const char *format, ...)
 	int j, count = 0, i = 0;
 	va_list args;
 
-	if (format == NULL)
-		return (-1);
-	va_start(args, format);
-	while (*format)
-	{
-		if (*format != '%')
-		{
-			_putchar(format);
-			count++;
-			format++;
-		}
-		else
-		{
-			format++;
-			int char_written = 0;
-			int j = 0;
+va_start(args, format);
 
-			while (formats[j].specifier)
+	while (format[i])
+	{
+		if (format[i] != '%')
+		{
+			_putchar(format[i]);
+			count++;
+			i++;
+			}
+			else
 			{
-				if (*format == formats[j].specifier)
+				j = 0;
+				while (formats[j].specifier)
 				{
-					char_written = formats[j].f(args);
-					count += char_written;
-					getchar();
-				}
-				j++;
-			}
-			if (!formats[j].specifier)
-			{
-				_putchar('%');
-				count++;
-				_putchar(*format);
-				count++;
-			}
-				format++;
-				i++;
-		}
-	}
-	va_end(args);
-	return (count);
+					if (format[i + 1] == formats[j].specifier)
+					{
+						count += formats[j].f(args);
+						}
+						j++;
+						}
+						i += 2;
+						}
+						}
+						va_end(args);
+						return (count);
 }
