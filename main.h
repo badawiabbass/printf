@@ -1,5 +1,9 @@
 #ifndef MAIN_H
 #define MAIN_H
+#define BUF_SIZE 1024
+#define BUF_FLUSH_SIZE -1
+#define BUF_FLUSH_CHAR '\n'
+
 
 #include <stdarg.h>
 #include <unistd.h>
