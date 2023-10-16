@@ -1,16 +1,8 @@
 #include "main.h"
 
-<<<<<<< HEAD
-
-int _putchar(int c)
-{
-        return write(1, &c, 1);
-}
-int _printf(const char *format, ...);
-=======
-/** 
- * putchar for printing integers 
- *
+/**
+ * _putchar - write character to stdout
+ * @c: character to write
  * Return: write with number and character
  */
 
