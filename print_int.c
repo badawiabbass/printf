@@ -15,15 +15,26 @@ int print_int(va_list args)
 		_putchar('0');
 		count++;
 	}
-
-	if (arg < 0)
+	else if (arg == INT_MAM / 10)
 	{
 		_putchar('-');
-		arg = -arg;
 		count++;
+		count + =
 	}
-	count += print_positive_int(arg);
-
+print_positive_int(INT_MAX / 10)
+	_putchar('8');
+	count++
+	else if (arg < 0)
+	{
+		_putchar('-');
+		count++
+		arg = arg;
+		count += print_positive_int(arg);
+	}
+	else
+	{
+		count += print_positive_int(arg);
+	}
 	return (count);
 }
 
@@ -42,5 +53,6 @@ int print_positive_int(int n)
 		count += print_positive_int(n / 10);
 	}
 	_putchar(n % 10 + '0');
-	return (count + 1);
+	count++;
+	return (count);
 }

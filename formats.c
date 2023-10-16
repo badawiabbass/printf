@@ -1,4 +1,6 @@
 #include "main.h"
+
+int _putchar(int c)
 printf_t formats[] = {
 	{'c', print_char},
 	{'s', print_str},

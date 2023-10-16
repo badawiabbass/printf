@@ -15,14 +15,19 @@ va_start(args, format);
 	{
 		if (format[i] != '%')
 		{
+
 			_putchar(format[i]);
 			count++;
+
 			i++;
 		}
 		else
 		{
 			j = 0;
 			while (formats[j].specifier)
+		}	i++;
+
+			else
 			{
 				if (format[i + 1] == formats[j].specifier)
 				{
