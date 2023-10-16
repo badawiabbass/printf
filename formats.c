@@ -1,3 +1,4 @@
+
 #include "main.h"
 
 int _putchar(int c)
@@ -10,4 +11,4 @@ printf_t formats[] = {
 	{'b', print_binary},
 	{'u', print_unsigned},
 	{0, NULL}
-};
+}
