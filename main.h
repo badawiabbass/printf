@@ -7,6 +7,7 @@
 
 #include <stdarg.h>
 #include <unistd.h>
+#include <limits.h>
 int print_str(va_list args);
 int print_char(va_list args);
 int print_per(va_list args);

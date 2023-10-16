@@ -1,3 +1,4 @@
+
 #include "main.h"
 
 int _putchar(int c)
@@ -11,4 +12,4 @@ printf_t formats[] = {
 	{'u', print_unsigned},
 	{'o', print_octal},
 	{0, NULL}
-};
+}

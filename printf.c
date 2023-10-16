@@ -6,38 +6,38 @@
  */
 int _printf(const char *format, ...)
 {
-	int j, count = 0, i = 0;
-	va_list args;
+	int j, count = 0, i = 0,
+	va_start(args, format);
+	va_list arg;
 
-va_start(args, format);
-
+	va_start(args, format);
 	while (format[i])
 	{
 		if (format[i] != '%')
 		{
-
 			_putchar(format[i]);
 			count++;
-
 			i++;
 		}
 		else
 		{
 			j = 0;
-			while (formats[j].specifier)
-		}	i++;
-
-			else
+			while (format[i].specifier)
 			{
-				if (format[i + 1] == formats[j].specifier)
+				if (format[i + 1] == format[j].specifier)
 				{
-					count += formats[j].f(args);
+					count += format[j].f(args);
 				}
 				j++;
+
 			}
 			i += 2;
+
 		}
+
 	}
 	va_end(args);
 	return (count);
+
+
 }
