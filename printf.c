@@ -26,11 +26,11 @@ int _printf(const char *format, ...)
 			while (formats[j].specifier)
 			{
 				if (format[i + 1] == formats[j].specifier)
-				{
 					count += formats[j].f(args);
-				}
 				j++;
 			}
+			if (!formats[j].specifier)
+				_putchar('%'), count++;
 			i += 2;
 		}
 	}
