@@ -22,6 +22,11 @@ int print_binary(va_list args)
 		num /= 2;
 		i++;
 	}
+	if (i == 0)
+	{
+		_putchar('0');
+		count++;
+	}
 	for (j = i - 1; j >= 0; j--)
 	{
 		_putchar(binary[j] + '0');

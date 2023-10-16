@@ -34,7 +34,6 @@ int print_int(va_list args)
  * Return: The number of digits printed.
  */
 int print_positive_int(int n)
-
 {
 	int count = 0;
 
