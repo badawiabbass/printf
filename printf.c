@@ -29,8 +29,6 @@ int _printf(const char *format, ...)
 					count += formats[j].f(args);
 				j++;
 			}
-			if (!formats[j].specifier)
-				_putchar('%'), count++;
 			i += 2;
 		}
 	}
