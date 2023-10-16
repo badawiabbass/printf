@@ -18,21 +18,21 @@ va_start(args, format);
 			_putchar(format[i]);
 			count++;
 			i++;
-			}
-			else
+		}
+		else
+		{
+			j = 0;
+			while (formats[j].specifier)
 			{
-				j = 0;
-				while (formats[j].specifier)
+				if (format[i + 1] == formats[j].specifier)
 				{
-					if (format[i + 1] == formats[j].specifier)
-					{
-						count += formats[j].f(args);
-						}
-						j++;
-						}
-						i += 2;
-						}
-						}
-						va_end(args);
-						return (count);
+					count += formats[j].f(args);
+				}
+				j++;
+			}
+			i += 2;
+		}
+	}
+	va_end(args);
+	return (count);
 }
