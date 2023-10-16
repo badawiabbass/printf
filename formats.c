@@ -9,5 +9,6 @@ printf_t formats[] = {
 	{'i', print_int},
 	{'b', print_binary},
 	{'u', print_unsigned},
+	{'o', print_octal},
 	{0, NULL}
 };
