@@ -1,21 +1,13 @@
 #include "main.h"
 
-<<<<<<< HEAD
-
-int _putchar(int c)
-{
-        return write(1, &c, 1);
-}
-int _printf(const char *format, ...);
-=======
-/** 
- * putchar for printing integers 
+/**
+ * putchar - Writes a character to stdout.
+ * @c: The character to write.
  *
- * Return: write with number and character
+ * Return: On success 1 is returned, otherwise -1 is returned and errno is set
+ * On error, -1 is returned, and errno is set appropriately.
  */
-
-int _putchar(int c)
+int putchar(int c)
 {
-	return write(1, &c, 1);
+	return (write(1, &c, 1));
 }
->>>>>>> refs/remotes/origin/master
