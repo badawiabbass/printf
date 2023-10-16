@@ -16,5 +16,5 @@ int print_str(va_list args)
 		count++;
 		j++;
 	}
-	return (count);
+	return (count - 1);
 }
