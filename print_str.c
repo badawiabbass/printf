@@ -10,6 +10,11 @@ int print_str(va_list args)
 	int count = 0;
 	int j = 0;
 
+	if (str == NULL)
+	{
+		_printf("(null)");
+		return (6);
+	}
 	while (str[j])
 	{
 		_putchar(str[j]);
