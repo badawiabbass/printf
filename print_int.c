@@ -27,6 +27,12 @@ int print_int(va_list args)
 	return (count);
 }
 
+/**
+ * print_positive_int - Prints a positive integer recursively.
+ * @n: The positive integer to print.
+ *
+ * Return: The number of digits printed.
+ */
 int print_positive_int(int n)
 
 {
