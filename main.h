@@ -16,15 +16,8 @@ int print_positive_int(int n);
 int print_binary(va_list args);
 int print_octal(va_list args);
 int print_hex(va_list args);
-int print_float(va_list args);
-int print_double(va_list args);
-int print_long_double(va_list args);
-int print_pointer(va_list args);
-int print_unsigned_int(va_list args);
-int print_unsigned_long(va_list args);
-int print_unsigned_long_long(va_list args);
-int print_unsigned_char(va_list args);
-int print_unsigned_short(va_list args);
+int print_hex_upper(va_list args)
+int print_unsigned(va_list args);
 typedef struct printf_s
 {
 char specifier;

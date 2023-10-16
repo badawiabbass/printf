@@ -7,5 +7,7 @@ printf_t formats[] = {
 	{'%', print_per},
 	{'d', print_int},
 	{'i', print_int},
+	{'b', print_binary},
+	{'u', print_unsigned},
 	{0, NULL}
 };
