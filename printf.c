@@ -12,24 +12,39 @@ int _printf(const char *format, ...)
 	if (format == NULL)
 		return (-1);
 	va_start(args, format);
-	while (format[i])
+	while (*format)
 	{
-		if (format[i] != '%')
+		if (*format != '%')
 		{
-			_putchar(format[i]);
+			_putchar(format);
 			count++;
-			i++;
+			format++;
 		}
 		else
 		{
-			j = 0;
+			format++;
+			int char_written = 0;
+			int j = 0;
+
 			while (formats[j].specifier)
 			{
-				if (format[i + 1] == formats[j].specifier)
-					count += formats[j].f(args);
+				if (*format == formats[j].specifier)
+				{
+					char_written = formats[j].f(args);
+					count += char_written;
+					getchar();
+				}
 				j++;
 			}
-			i += 2;
+			if (!formats[j].specifier)
+			{
+				_putchar('%');
+				count++;
+				_putchar(*format);
+				count++;
+			}
+				format++;
+				i++;
 		}
 	}
 	va_end(args);
