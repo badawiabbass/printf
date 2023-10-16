@@ -1,21 +1,9 @@
 #include "main.h"
-
-<<<<<<< HEAD
-
-int _putchar(int c)
-{
-        return write(1, &c, 1);
-}
-int _printf(const char *format, ...);
-=======
-/** 
- * putchar for printing integers 
- *
- * Return: write with number and character
+/**
+ * _putchar - for printing number and char
+ * write - to write the num and char
  */
-
 int _putchar(int c)
 {
 	return write(1, &c, 1);
 }
->>>>>>> refs/remotes/origin/master
