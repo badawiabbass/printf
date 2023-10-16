@@ -1,13 +1,20 @@
 #include "main.h"
 
-/**
- * putchar - Writes a character to stdout.
- * @c: The character to write.
+<<<<<<< HEAD
+
+int _putchar(int c)
+{
+        return write(1, &c, 1);
+}
+int _printf(const char *format, ...);
+=======
+/** 
+ * putchar for printing integers 
  *
- * Return: On success 1 is returned, otherwise -1 is returned and errno is set
- * On error, -1 is returned, and errno is set appropriately.
+ * Return: write with number and character
  */
-int putchar(int c)
+
+int _putchar(int c)
 {
 	return (write(1, &c, 1));
 }

@@ -9,6 +9,8 @@ int _printf(const char *format, ...)
 	int j, count = 0, i = 0;
 	va_list args;
 
+	if (format == NULL)
+		return (-1);
 	va_start(args, format);
 	while (format[i])
 	{
@@ -24,9 +26,7 @@ int _printf(const char *format, ...)
 			while (formats[j].specifier)
 			{
 				if (format[i + 1] == formats[j].specifier)
-				{
 					count += formats[j].f(args);
-				}
 				j++;
 			}
 			i += 2;
