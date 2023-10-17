@@ -7,7 +7,8 @@
 int print_octal(va_list args)
 {
 	unsigned int arg = va_arg(args, unsigned int);
-	int j, count = 0, octal[32], i = 0;
+	int j, count = 0, octal[32];
+	int i = 0;
 
 	if (arg == 0)
 	{
