@@ -1,7 +1,7 @@
 #include "main.h"
 /**
- * print_unsigned - prints unsigned integers
- * @args: the arguments
+ * print_unsigned - prints unsigned integer
+ * @args: the argument
  * Return: the number of digits printed
  */
 int print_unsigned(va_list args)
