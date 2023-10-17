@@ -9,6 +9,5 @@ printf_t formats[] = {
 	{'u', print_unsigned},
 	{'o', print_octal},
 	{'x', print_hex},
-	{'X', print_hex_upper},
-	{0, NULL}
+	{'X', print_hex_upper}
 };

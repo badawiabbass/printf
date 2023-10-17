@@ -21,7 +21,7 @@ int print_octal(va_list args)
 		arg /= 8;
 		i++;
 	}
-	for (j = i - 1; j >= o; j--)
+	for (j = i - 1; j >= 0; j--)
 	{
 		_putchar(octal[j] + '0');
 		count++;

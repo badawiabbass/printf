@@ -9,9 +9,7 @@ int print_hex(va_list args)
 	unsigned int arg = va_arg(args, unsigned int);
 	int count = 0;
 
-	/**
-	 * 0 means lowercase letters
-	 */
+	count += print_hexadecimal(arg, 0);
 	return (count);
 }
 

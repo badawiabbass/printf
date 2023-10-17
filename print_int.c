@@ -7,8 +7,7 @@
  */
 int print_int(va_list args)
 {
-	int count = 0;
-	arg = va_arg(args, int);
+	int count = 0, arg = va_arg(args, int);
 
 	if (arg == 0)
 	{
@@ -28,13 +27,11 @@ print_positive_int(INT_MAX / 10);
 	{
 		_putchar('-');
 		count++;
-		arg = arg;
+		arg = -arg;
 		count += print_positive_int(arg);
 	}
 	else
-	{
 		count += print_positive_int(arg);
-	}
 	return (count);
 	
 }
