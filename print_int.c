@@ -15,16 +15,16 @@ int print_int(va_list args)
 		_putchar('0');
 		count++;
 	}
-	else if (arg == INT_MAX / 10)
+	else if (arg == INT_MIN)
 	{
 		_putchar('-');
 		count++;
-		count += 1;
+		count +=
 	}
 print_positive_int(INT_MAX / 10);
 	_putchar('8');
 	count++;
-	if (arg < 0)
+	else if (arg < 0)
 	{
 		_putchar('-');
 		count++;
