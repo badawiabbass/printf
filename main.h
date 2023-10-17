@@ -4,6 +4,7 @@
 #include <stdarg.h>
 #include <unistd.h>
 #include <limits.h>
+
 int print_str(va_list args);
 int print_char(va_list args);
 int print_per(va_list args);
@@ -16,6 +17,7 @@ int print_hex(va_list args);
 int print_hex_upper(va_list args);
 int print_unsigned(va_list args);
 int print_hexadecimal(unsigned int num, int uppercase);
+
 typedef struct printf
 {
 	char specifier;
