@@ -3,7 +3,7 @@
  * print_hexadecimal - prints numers in hexadecimal
  * @num: the number to be converted
  * @uppercase: if uppercase
- * Return: the number of digits printed
+ * Return: the number of digits that will be printed
  */
 int print_hexadecimal(unsigned int num, int uppercase)
 {
