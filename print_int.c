@@ -53,6 +53,7 @@ int print_positive_int(int n)
 		count += print_positive_int(n / 10);
 	_putchar(n % 10 + '0');
 	count++;
-	return (count);
 	}
+	return (count);
+	
 }
