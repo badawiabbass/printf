@@ -2,7 +2,7 @@
 /**
  * print_per - for printing %
  * @args: the argument
- * Return: i
+ * Return: 1
  */
 int print_per(va_list args)
 {
