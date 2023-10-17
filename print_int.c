@@ -18,10 +18,9 @@ int print_int(va_list args)
 	{
 		_putchar('-');
 		count++;
-		count +=
-print_positive_int(INT_MAX / 10);
-	_putchar('8');
-	count++;
+		count += print_positive_int(INT_MAX / 10);
+		_putchar('8');
+		count++;
 	}
 	else if (arg < 0)
 	{
@@ -33,9 +32,7 @@ print_positive_int(INT_MAX / 10);
 	else
 		count += print_positive_int(arg);
 	return (count);
-	
 }
-
 /**
  * print_positive_int - Prints a positive integer recursively.
  * @n: The positive integer to print.
@@ -53,5 +50,4 @@ int print_positive_int(int n)
 	_putchar(n % 10 + '0');
 	count++;
 	return (count);
-	
 }
