@@ -2,7 +2,7 @@
 /**
  * print_char - for printing characters
  * @args: the argument character
- * Return: 1
+ * Return: the number of digits which is 1
  */
 int print_char(va_list args)
 {
