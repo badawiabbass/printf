@@ -13,7 +13,7 @@ int print_positive_int(int n);
 int print_binary(va_list args);
 int print_octal(va_list args);
 int print_hex(va_list args);
-int print_hex_upper(va_list args)
+int print_hex_upper(va_list args);
 int print_unsigned(va_list args);
 int print_hexadecimal(unsigned int num, int uppercase);
 typedef struct printf

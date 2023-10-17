@@ -13,4 +13,4 @@ printf_t formats[] = {
 	{'x', print_hex},
 	{'X', print_hex_upper},
 	{0, NULL}
-}
+};
