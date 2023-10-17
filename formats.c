@@ -1,7 +1,6 @@
 
 #include "main.h"
 
-int _putchar(int c)
 printf_t formats[] = {
 	{'c', print_char},
 	{'s', print_str},
@@ -11,5 +10,7 @@ printf_t formats[] = {
 	{'b', print_binary},
 	{'u', print_unsigned},
 	{'o', print_octal},
+	{'x', print_hex},
+	{'X', print_hex_upper},
 	{0, NULL}
 }

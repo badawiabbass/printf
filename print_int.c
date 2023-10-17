@@ -24,7 +24,6 @@ int print_int(va_list args)
 print_positive_int(INT_MAX / 10);
 	_putchar('8');
 	count++;
-	
 	if (arg < 0)
 	{
 		_putchar('-');

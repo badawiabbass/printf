@@ -6,11 +6,12 @@
  */
 int _printf(const char *format, ...)
 {
-	int j, count = 0, i = 0,
-	va_start(args, format);
-	va_list arg;
+	int j, count = 0, i = 0;
+	va_list args;
 
 	va_start(args, format);
+	if (format == NULL)
+		return (-1);
 	while (format[i])
 	{
 		if (format[i] != '%')
@@ -22,11 +23,11 @@ int _printf(const char *format, ...)
 		else
 		{
 			j = 0;
-			while (format[i].specifier)
+			while (formats[j].specifier)
 			{
-				if (format[i + 1] == format[j].specifier)
+				if (format[i + 1] == formats[j].specifier)
 				{
-					count += format[j].f(args);
+					count += formats[j].f(args);
 				}
 				j++;
 

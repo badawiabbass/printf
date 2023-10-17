@@ -28,4 +28,4 @@ int print_octal(va_list args)
 		count++;
 	}
 	return (count);
-}	
+}

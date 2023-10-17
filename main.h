@@ -1,9 +1,5 @@
 #ifndef MAIN_H
 #define MAIN_H
-#define BUF_SIZE 1024
-#define BUF_FLUSH_SIZE -1
-#define BUF_FLUSH_CHAR '\n'
-
 
 #include <stdarg.h>
 #include <unistd.h>
@@ -19,11 +15,11 @@ int print_octal(va_list args);
 int print_hex(va_list args);
 int print_hex_upper(va_list args)
 int print_unsigned(va_list args);
-int print_hexadecimal(unsigned int num, int uppercase)
-typedef struct printf_s
+int print_hexadecimal(unsigned int num, int uppercase);
+typedef struct printf
 {
-char specifier;
-int (*f)(va_list args);
+	char specifier;
+	int (*f)(va_list args);
 } printf_t;
 extern printf_t formats[];
 int _printf(const char *format, ...);

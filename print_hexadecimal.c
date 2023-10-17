@@ -10,7 +10,7 @@ int print_hexadecimal(unsigned int num, int uppercase)
 	int count = 0;
 	const char *hdigits = "0123456789abcdef";
 
-	if (uppercas)
+	if (uppercase)
 		hdigits = "0123456789ABCDEF";
 	if (num / 16 != 0)
 		count += print_hexadecimal(num / 16, uppercase);
