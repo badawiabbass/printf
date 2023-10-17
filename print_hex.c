@@ -1,41 +1,51 @@
 #include "main.h"
-
 /**
- * print_hex - the function print hex representation of num
- * Prameter:
- *args num - It takes an integer as input and prints its hexadecimal
- *@args: - An array of integers to be printed in hexadecimal
- *
- * Return: count
+ * print_int - for print integers
+ * @args: the argument of integers
+ * Return: 1
 */
-int print_hex(va_list args)
+int print_int(va_list args)
 {
-	unsigned int arg = va_arg(args, unsigned int);
-
 	int count = 0;
+	int arg = va_arg(args, int);
 
-	count += print_hexadecimal(arg, 0);
-
-	/**
-	 * 0 means lowercase letters
-	 */
-	return (count);
-/**
- * Print_hex_upper - Prints an uppercase hexadecimal representation.
- *Parameter:
- *@args:  An array of int be printed in hex
- * num_args - The number of elements in the 'args' array
- *print_hex_upper - Print the hexadecimal representation of
- *an integer in uppercase using variable arguments
- * Return: count
- */
-int print_hex_upper(va_list arg)
-{
-
-	unsigned int args = va_arg(args, unsigned int);
-	int count = 0;
-
-	count += print_hex(arg, 1);
-
-return (count);
+	if (arg == 0)
+	{
+		_putchar('0');
+		count++;
+		return (count);
+		else if (arg == INT_MAX)
+		{
+			_putchar('-');
+			count++;
+			count += 1;
+			return (count);
+		}
+		print_positive_int(INT_MAX / 10);
+		_putchar('8');
+		count++;
+		else if (arg < 0)
+		{
+			_putchar('-');
+			count++;
+			arg = arg;
+			count += print_positive_int(arg);
+			else
+			{
+				count += print_positive_int(arg);
+			}
+			return (count);
+		}
+  /**
+   * print_positive_int - Prints a positive integer recursively.
+   * @n: The positive integer to print.
+   *
+  */
+		int print_positive_int(int n)
+		{
+			_putchar(n / 10 + '0');
+			count++;
+		}
+		return (count);
+	}
 }
