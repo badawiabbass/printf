@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #include "main.h"
 
 /**
@@ -55,3 +56,5 @@ int arg = va_arg(args, int);
 							return (count);
 					}
 }
+=======
+>>>>>>> 6ab2f02d7cb14b70b81f3668d00ea5e3b506a4ea

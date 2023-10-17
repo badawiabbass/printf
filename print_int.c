@@ -34,8 +34,9 @@ print_positive_int(INT_MAX / 10);
 	else
 	{
 		count += print_positive_int(arg);
-	return (count);
 	}
+	return (count);
+	
 }
 
 /**
@@ -51,8 +52,9 @@ int print_positive_int(int n)
 	if (n / 10 != 0)
 	{
 		count += print_positive_int(n / 10);
+	}
 	_putchar(n % 10 + '0');
 	count++;
 	return (count);
-	}
+	
 }
