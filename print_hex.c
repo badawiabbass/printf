@@ -21,11 +21,12 @@ int print_hex(va_list args)
 	 */
 	return (count);
 /**
- *Print_hex_upper - Prints an uppercase hexadecimal representation
+ * Print_hex_upper - Prints an uppercase hexadecimal representation.
  *Parameter:
  *@args:  An array of int be printed in hex
  * num_args - The number of elements in the 'args' array
- *
+ *print_hex_upper - Print the hexadecimal representation of
+ *an integer in uppercase using variable arguments
  * Return: count
  */
 int print_hex_upper(va_list args)
