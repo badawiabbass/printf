@@ -29,13 +29,13 @@ int print_hex(va_list args)
  *an integer in uppercase using variable arguments
  * Return: count
  */
-int print_hex_upper(va_list args)
+int print_hex_upper(va_list arg)
 {
 
 	unsigned int args = va_arg(args, unsigned int);
 	int count = 0;
 
 	count += print_hex(arg, 1);
-}
+
 return (count);
 }
